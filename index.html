@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>ห้องเรียนการเขียนโปรแกรมคอมพิวเตอร์เบื้องต้น - Interactive Python Tutorial</title>
+  <meta name="description" content="สื่อนวัตกรรมการสอนการเขียนโปรแกรมคอมพิวเตอร์เบื้องต้นด้วยภาษา Python สำหรับนักศึกษาปริญญาตรีชั้นปีที่ 1 พร้อมแบบทดสอบวัดระดับกระบวนการคิดตามทฤษฎีบลูม (Bloom's Taxonomy) ในรูปแบบสุนทรียภาพพาสเทล">
+  <meta name="keywords" content="เขียนโปรแกรม, Python, คอมพิวเตอร์เบื้องต้น, เรียน Python, Bloom's Taxonomy, แบบทดสอบ Python, ตัวแปร, ฟังก์ชัน, เงื่อนไข, โครงสร้างข้อมูล">
+  <meta name="author" content="Natcha">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="สื่อนวัตกรรมการสอนการเขียนโปรแกรมคอมพิวเตอร์เบื้องต้น - Interactive Python Tutorial">
+  <meta property="og:description" content="บทเรียนออนไลน์เขียนโปรแกรม Python พร้อมระบบประมวลผลโค้ดแบบ Interactive และแบบทดสอบวัดผลระดับการประเมินวิเคราะห์ตาม Bloom's Taxonomy">
+  <meta property="og:type" content="website">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- App Main Shell Wrapper -->
+  <div id="app-container">
+    
+    <!-- Navigation Sidebar -->
+    <aside id="sidebar" aria-label="แถบการนำทางหลัก">
+      
+      <!-- Sidebar Header -->
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <div class="logo-icon">🐍</div>
+          <span class="logo-text">LearnPython</span>
+        </div>
+        
+        <!-- Interactive Progress widget -->
+        <div class="progress-widget" id="overall-progress-card">
+          <div class="progress-widget-header">
+            <span>ความก้าวหน้ารายวิชา</span>
+            <span id="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Menu links injected dynamically by app.js -->
+      <nav class="sidebar-menu" id="sidebar-menu" aria-label="หัวข้อบทเรียน"></nav>
+
+      <!-- Sidebar Footer and Settings -->
+      <footer class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar" id="user-avatar">N</div>
+          <div class="user-info">
+            <span class="user-name" id="username-display">Natcha</span>
+            <span class="user-role">นักศึกษาชั้นปีที่ 1</span>
+          </div>
+        </div>
+        
+        <!-- Light/Dark Mode Switcher -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="สลับโหมดสว่าง/มืด">
+          <span id="theme-icon">
+            <!-- SVG icon injected by app.js -->
+          </span>
+        </button>
+      </footer>
+    </aside>
+
+    <!-- Main Content Workspace Area -->
+    <main id="main-content">
+      
+      <!-- Top header bar for mobile -->
+      <div class="top-toolbar" style="margin-bottom: 0;">
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="เปิดเมนูด้านซ้าย">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Content dynamically injected here (Dashboard, Lesson, Quiz, Summary) -->
+      <div style="text-align: center; padding: 100px 20px; color: var(--text-muted);">
+        <p>กำลังเตรียมข้อมูลบทเรียนออนไลน์ กรุณารอสักครู่...</p>
+      </div>
+      
+    </main>
+
+  </div>
+
+  <!-- JavaScript Modules and Data -->
+  <script src="content.js"></script>
+  <script src="code_runner.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
